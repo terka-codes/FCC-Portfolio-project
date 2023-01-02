@@ -1,0 +1,264 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family:  "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  color: #fc6d46;
+}
+
+.flex {
+  display: flex;
+}
+
+nav {
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  z-index: 3;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.home {
+  font-family: 'Inter Tight', sans-serif;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fc6d46;
+  padding: 15px;
+}
+
+.home:visited {
+  color: #fc6d46;
+}
+
+.home:hover {
+  color: #fff;
+  padding: 5px 15px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+li a {
+  display: block;
+  margin: 0 5px;
+  padding: 5px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+}
+
+li a:hover:not(.active) {
+  color: black;
+  margin: 0 0px;
+  padding: 5px 10px;
+  background-color: #fc6d46;
+  border-radius: 50px;
+}
+
+section {
+  min-height: 100vh;
+  margin: auto;
+}
+
+#welcome-section {
+  background-image: url("https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-repeat: no-repeat;
+  background-position: center 0.5%;
+  background-size: 650px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.type-effect {
+  color: white;
+  font-size: 30px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #fc6d46;
+/* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 2.5s steps(16, end),
+    blink-caret 0.8s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 360px }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #ff7ca1}
+}
+ 
+#projects {
+  padding-top: 80px;
+  max-width: 900px;
+  width: 90%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cropped-image {
+
+  font-family:  "Inter Tight", sans-serif;
+  text-transform: uppercase;
+
+  font-size: 3.5em;
+  font-weight: bold;
+
+  background-image: url(https://images.pexels.com/photos/426983/pexels-photo-426983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+#flex-projects {
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.project {
+  width: 260px;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(32, 31, 31);
+  border-radius: 20px;
+
+  box-shadow: #fc6d46a7 2px 2px;
+}
+
+.project:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  transform: scale(1.03);
+  box-shadow: #fc6d46a7 1px 1px;
+}
+
+.project > h3 {
+  color: #fc6d46;
+  font-size: 1.2em;
+  margin: 10px 5px 5px 5px;
+}
+
+.project > p {
+  margin: 5px;
+  color: rgb(130, 129, 129);
+  font-size: 0.9em;
+  line-height: 1.1em;
+}
+
+.img {
+  height: 200px;
+  width: 260px;
+  border-radius: 10px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#pr1-img {
+  background-image: url(https://cdn.midjourney.com/a091b336-2b70-49ca-8334-abe458099bc6/grid_0.png);
+  background-position: top center; 
+}
+
+#pr2-img {
+  background-image: url(https://cdn.midjourney.com/198410a7-7a62-49f3-8ec3-35fb5e1cc05b/grid_0.png);
+  background-position: top center;
+}
+
+#pr3-img {
+  background-image: url(https://images.pexels.com/photos/4386323/pexels-photo-4386323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+}
+
+#pr4-img {
+  background-image: url(https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+}
+
+#pr5-img {
+  background-image: url(https://images.pexels.com/photos/4050347/pexels-photo-4050347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+}
+
+#more-btn {
+  color: white;
+  font-size: 1.55em;
+  margin: 10px;
+  padding: 15px 20px;
+  text-decoration: none;
+  background-color: rgb(32, 31, 31);
+  border-radius: 20px;
+  
+  box-shadow: #fc6d46a7 2px 2px;
+  transition: 0.3s;
+}
+
+#more-btn:visited {
+  color: white;
+}
+
+#more-btn:hover {
+  color: black;
+  font-size: 1.55em;
+  margin: 10px;
+  padding: 15px 20px;
+  text-decoration: none;
+  background-color: #fc6d46;
+  box-shadow: black 2px 2px;
+  transform: scale(1.07);
+}
+
+.contacts {
+  background-color: rgb(32, 31, 31);
+  border-radius: 20px;
+  
+  box-shadow: #fc6d46a7 2px 2px;
+}
+
+footer {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .type-effect {
+  font-size: 20px;
+}
+
+@media (min-width: 800px) {
+  .cropped-image {
+  font-size: 90px;
+  line-height: 75px;
+  }
+}
