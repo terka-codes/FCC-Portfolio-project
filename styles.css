@@ -16,11 +16,19 @@ body {
 
 nav {
   background: black;
+  height: 60px;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+}
+
+#nav-links {
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
-  z-index: 3;
+  width: 100%;
+  max-width: 900px;
 }
 
 #navbar {
@@ -85,7 +93,14 @@ section {
   background-size: 650px;
   background-color: black;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#wel-text {
+  top: 42vw;
+  position: relative;
+  display: flex;
   align-items: center;
   flex-direction: column;
 }
