@@ -280,6 +280,11 @@ section {
   align-items: center;
 }
 
+.link-icon > img  {
+  width: 35px;
+  height: 35px;
+}
+
 .icons  {
   width: 35px;
   height: 35px;
@@ -316,9 +321,30 @@ footer > p > a:hover {
 }
 
 @media (max-width: 600px) {
+  nav, body {
+    width: 100vw;
+  }
+
   .type-effect {
   font-size: 20px;
   }
+
+  #welcome-section {
+    background-position: center 25vh;
+  }
+
+  #nav-links{
+    flex-direction: column;
+  }
+
+  #contacts {
+    max-width: 100vw;
+  }
+
+  #all-icons {
+    flex-wrap: wrap;
+  }
+
 }
 
 @media (min-width: 800px) {
