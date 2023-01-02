@@ -326,4 +326,8 @@ footer > p > a:hover {
   font-size: 90px;
   line-height: 75px;
   }
+
+  #welcome-section {
+    background-position: center 0vh;
+  }
 }
